@@ -6,25 +6,6 @@
 
 明年1月份开启弹幕功能
 
-### 安装 
-```
-  npm install temp-video
-```
-### 引用
-
-```
-  <!-- main.js -->
-  import tempVideo from 'temp-video' // 按照ui包做的 全局安装
-  vue.use(tempVideo)
-  
-  <!-- .vue -->
-  import { VideoPlayer } from 'temp-video' // 局部安装
-  components:{
-      VideoPlayer
-  }
-
-```
-
 ### 组件内使用
 
 ```javascript
@@ -36,7 +17,6 @@
   ></videoPlayer>
 
 ```
-
 
 ### Api
 
@@ -59,3 +39,18 @@
  - 我已经替你百度了:body{ -webkit-overflow-scrolling:touch; }
 - 全屏时样式
  - 全屏时 高度:100vh 定位:fixed  z-index:10000
+
+
+### 版本修复
+
+- 2020/11/19
+  - 修复拖动进度条（因为不时最外层盒子时的尺寸偏移）
+  - 修复重复调用组件时id差异  现在采用时间戳ID
+- 2020/11/27
+  - ios 全屏后会和底部刘海屏重合不好拖动进度条的问题
+  - 修复拖动进度条的时候 控制栏会消失
+  - 修复倍速时点击应该切换显示与否
+
+### 新增插件
+  - 日历插件
+  - 音频插件(他人组件改全局音频:待完善)

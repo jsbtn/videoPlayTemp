@@ -1,7 +1,16 @@
+import './fonts'
+import AudioPlayer from './audio-player/index.vue'
+import Audio from './audio-player/audio.js'
 import VideoPlayer from './video-player/index.vue'
+import calendar from './calendar/index.vue'
+
+const AudioDom = new Audio().AudioDom
+document.querySelector('body').append(AudioDom)
 
 const components = [
-  VideoPlayer
+  AudioPlayer,
+  VideoPlayer,
+  calendar
 ]
 
 const install = Vue => {
@@ -16,7 +25,9 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export {
-  VideoPlayer
+  AudioPlayer,
+  VideoPlayer,
+  calendar
 }
 
 export default {
