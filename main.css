@@ -1,0 +1,241 @@
+
+ /* @ 自定义基础类 */
+ /* reset */
+ * {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+ *:before,*:after {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+ html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu {margin: 0;padding: 0;}
+ header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details {display: block;}
+ table {border-collapse: collapse;border-spacing: 0;}
+ caption,th {text-align: left;font-weight: normal;}
+ html,body,fieldset,img,iframe,abbr {border: 0;}
+ i,cite,em,var,address,dfn {font-style: normal;}
+ [hidefocus]
+ summary {outline: 0;}
+ li {list-style: none;}
+ sup,sub {font-size: 83%;}
+ pre,code,kbd,samp {font-family: inherit;}
+ q:before,q:after {content: none;}
+ textarea {overflow: auto;resize: none;}
+ label,summary {cursor: default;}
+ a,button {cursor: pointer;}
+ h1,h2,strong,b {font-weight: bold;}
+ h3,h4,h5,h6,em {font-weight: 400;}
+ del,ins,u,s,a,a:hover {text-decoration: none;}
+ body,textarea,input,button,select,legend {font: 14px/1.6 arial,"Microsoft Yahei";color: #000;outline: 0;}
+ body {background: #fff;font-size: 14px;}
+ a:focus,a:active {outline: none;}
+ a,a:focus,a:hover {cursor: pointer;color: inherit;text-decoration: none;}
+ div:focus {outline: none;}
+ img {max-width: 100%;}
+ input {border: none;}
+ html,body {padding: 0px;margin: 0px;}
+ * {margin: 0;padding: 0;}
+ body .el-table th.gutter {display: table-cell !important;}
+ body .el-table colgroup.gutter {display: table-cell !important;} 
+ *::-webkit-scrollbar {width: 8px;height: 8px;}
+ *::-webkit-scrollbar-thumb {background-color: #bdbdbd;background-clip: padding-box;min-height: 8px;border-radius: 20px;}
+ .rotate{transform: rotate(180deg); transition: 0.2s;}
+ /* base */
+ 
+ .fw {font-family: "Microsoft Yahei" "SimHei";}
+ .fa {font-family: Arial;}
+ .ft {font-family: Tahoma;}
+ .fs {font-family: "SimSun";}
+ .fwb {font-weight: bold;}
+ .fwn {font-weight: normal;}
+ .f400 {font-weight: 400;}
+ .f500 {font-weight: 500;}
+ 
+ /* 字类 */
+ 
+ .f10 {font-size: 10px;}
+ .f12 {font-size: 12px;}
+ .f11 {font-size: 11px;}
+ .f13 {font-size: 13px;}
+ .f14 {font-size: 14px;}
+ .f15 {font-size: 15px;}
+ .f17 {font-size: 17px;}
+ .f16 {font-size: 16px;}
+ .f18 {font-size: 18px;}
+ .f20 {font-size: 20px;}
+ .f22 {font-size: 22px;}
+ .f24 {font-size: 24px;}
+ .f26 {font-size: 26px;}
+ .f28 {font-size: 28px;}
+ .f30 {font-size: 30px;}
+ .c1 {color: #111;}
+ .c2 {color: #222;}
+ .c3 {color: #333;}
+ .c4 {color: #444;}
+ .c5 {color: #555;}
+ .c6 {color: #666 !important}
+ .c7 {color: #777;}
+ .c8 {color: #888;}
+ .c9 {color: #999;}
+ .c0 {color: #000;}
+ .cc {color: #ccc;}
+ .cb {color: #bbb;}
+ .cf {color: #fff;}
+ .c14 {color: #141414;}
+ .cf5 {color: #f5f5f5;}
+ .cred{color: red;}
+ .cgreen{color: green;}
+ .cblue{color: blue}
+ .corange{color: orange;}
+ .credE7{color: #E7023B !important}
+ .corangeFF{color: #FF9951 !important;}
+
+ /*北京*/
+ 
+ .bgf {background: #fff;}
+ .bge {background: #eee;}
+ .bgf2 {background: #f2f2f2;}
+ .bgf7 {background: #f7f7f7;}
+ .bgf8 {background: #f8f8f8;}
+ 
+ /*边框类*/
+ 
+ .bor {border: 1px solid #ccc;}
+ .bo-b {border-bottom: 1px solid #ccc;}
+ .bo-t{border-top: 1px solid #ccc;}
+ .bo-l{border-left: 1px solid #ccc;}
+ .bo-r{border-right: 1px solid #ccc;}
+ 
+ /* 通用margin类 */
+ 
+ .mc {margin: 0 auto;}
+ .mt {margin-top: 10px;}
+ .mb {margin-bottom: 10px !important;}
+ .ml {margin-left: 10px;}
+ .mr {margin-right: 10px;}
+ .mt20 {margin-top: 20px;}
+ .mb20 {margin-bottom: 20px;}
+ .ml20 {margin-left: 20px;}
+ .mr20 {margin-right: 20px;}
+ 
+ /* 通用padding类 */
+ 
+ .pt {padding-top: 10px;}
+ .pb {padding-bottom: 10px;}
+ .pl {padding-left: 10px;}
+ .pr {padding-right: 10px;}
+ .pl15 {padding-left: 15px;}
+ .pr15 {padding-right: 15px;}
+ .pt15 {padding-top: 15px;}
+ .pb15 {padding-bottom: 15px;}
+ .pt20 {padding-top: 20px;}
+ .pb20 {padding-bottom: 20px;}
+ .pl20 {padding-left: 20px;}
+ .pr20 {padding-right: 20px;}
+ 
+ /* 12弹性栅栏布局 */
+ 
+ .flex-row {display: flex;flex-wrap: wrap;}
+ .row-col-1 {width: 8.333333%;}
+ .row-col-2 {width: 16.666666%;}
+ .row-col-3 {width: 25%;}
+ .row-col-4 {width: 33.333333%;}
+ .row-col-5 {width: 41.666666%;}
+ .row-col-6 {width: 50%;}
+ .row-col-7 {width: 58.333333%;}
+ .row-col-8 {width: 66.666666%;}
+ .row-col-9 {width: 75%;}
+ .row-col-10 {width: 83.3333333%;}
+ .row-col-11 {width: 91.6666666%;}
+ .row-col-12 {width: 100%;}
+ 
+ /* 文档流行布局 */
+ .flex {display: flex;}
+ .dn {display: none;}
+ .db {display: block;}
+ .dib {display: inline-block;}
+ .tr {text-align: right;}
+ .tl {text-align: left;}
+ .tc {text-align: center;}
+ .fr {float: right;}
+ .fl {float: left;}
+ .clear {clear: both;}
+ 
+.posr{ position: relative; }
+.posab{ position: absolute; }
+
+
+ /*滚动隐藏*/
+ /* ↑面 有个类格式化了 webkit内核的滚动条 */
+ .of-h {overflow: hidden;}
+ .of-x-s {overflow-x: scroll;}
+ .of-y-s {overflow-y: scroll;}
+ /* hover 类 */
+ .h-act:hover { cursor: pointer; }
+ .c-act:active { opacity: 0.82; }
+ 
+ /* [text][img] 上下对齐方式 多用于文字图片 啊~ 博大精深 */
+ .vat{vertical-align: top;}
+ .vam{vertical-align: middle;}
+ .vab{vertical-align: bottom;}
+ 
+ /* 行省略 */
+ 
+ .tline1 {white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+ .tline2 {display: -webkit-box;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;-webkit-line-clamp: 2;}
+ .tline3 {display: -webkit-box;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;-webkit-line-clamp: 3;}
+ .tline4 {display: -webkit-box;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;-webkit-line-clamp: 4;}
+ .tline5 {display: -webkit-box;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;-webkit-line-clamp: 5;}
+ .tline6 {display: -webkit-box;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;-webkit-line-clamp: 6;}
+ .tline7 {display: -webkit-box;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;-webkit-line-clamp: 7;}
+ /* 强识用 就是逼不得已不用得意思 但是我经常用 */
+ 
+ .w180x {width: 180px !important;}
+ .w100x {width: 100px !important;}
+ .w80x {width: 80px !important;}
+ .w50x{width: 50px !important;}
+ .w300x {width: 300px !important;}
+ .w400x {width: 400px !important;}
+ .w500x {width: 500px !important;}
+ .w80p {width: 80% !important;}
+ .w50p {width: 50% !important;}
+ .w100p {width: 100% !important;}
+ .h100h {height: 100vh !important;}
+ 
+ /*乱七八糟的各种盒子 居中对齐方式 */
+ 
+ /* 弹性盒子 没考虑兼容性 */
+ /**-作用box----**/
+ /*居中父元素内唯一子元素*/
+ .flex-center {height: inherit;display: flex;align-items: center;justify-content: center;}
+ /*定宽左右分离*/
+ .flex-sb {display: flex;justify-content: space-between;}
+ .flex-sa {display: flex;justify-content: space-around;}
+ /*定高上下分离*/
+ .flex-c-sb {height: inherit;display: flex;flex-direction: column;justify-content: space-between;}
+ .flex-c-sa {height: inherit;display: flex;flex-direction: column;justify-content: space-around;}
+ /* 弹性换行 */
+ .flex-w{flex-wrap: wrap;}
+ /*....此处省略1000种弹性盒子用法*/
+
+ /* vue 过度动画 */
+.fade-enter-active, 
+.fade-leave-active {  transition: opacity 0.28s;}
+.fade-enter, 
+.fade-leave-active {  opacity: 0;}
+.fade-transform-leave-active, 
+.fade-transform-enter-active {  transition: all .5s;}
+.fade-transform-enter {  opacity: 0;  transform: translateX(-30px);}
+.fade-transform-leave-to {  opacity: 0;  transform: translateX(30px);}
+.breadcrumb-enter-active,
+.breadcrumb-leave-active {  transition: all .5s;}
+.breadcrumb-enter,
+.breadcrumb-leave-active {opacity: 0;transform: translateX(20px);}
+.breadcrumb-move {transition: all .5s;}
+.breadcrumb-leave-active {position: absolute;}
+.marsk-enter-active, 
+.marsk-leave-active {transform: translateX(-10px); transition: all .3s ease; }
+.marsk-enter, .marsk-leave-to { transform: translateX(10px);-webkit-transform: translateX(10px); -moz-transform: translateX(10px); opacity: 0; }
+.lineTo-enter-active, 
+.lineTo-leave-active {transform: translateX(-100%); transition: all .5s ease; }
+.lineTo-enter, 
+.lineTo-leave-to { transform: translateX(100%);-webkit-transform: translateX(100%); -moz-transform: translateX(100%); opacity: 0; }
+/*vue-Animate*/
+.bounce-enter-active {animation: bounce-in .5s;}
+.bounce-leave-active {animation: bounce-in .5s reverse;}
+@keyframes bounce-in {0% {transform: scale(0.7);} 50% {transform: scale(1.1);}100% {transform: scale(1);}}
